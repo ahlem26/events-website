@@ -1,0 +1,88 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    /* Affiche les sections côte à côte */
+    height: 100vh;
+    /* Pour que .section1 et .section2 prennent la hauteur entière */
+    overflow: hidden;
+    /* Empêche le scroll global, on scrollera juste dans section2 */
+}
+
+.section1 {
+    flex: 1;
+    /* 50% de l'écran */
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/2560px-Flag_of_Algeria.svg.png');
+    /* chemin de ton image */
+    background-size: cover;
+    /* adapte l'image à la taille */
+    background-position: center;
+    /* centre l'image */
+    background-repeat: no-repeat;
+    /* évite la répétition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.event {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* fond semi-transparent noir */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 70px 10px;
+    margin: 20px;
+}
+
+.event h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.section2 {
+    flex: 1;
+    /* 50% de l'écran */
+    overflow-y: auto;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.date {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    color: white;
+}
+
+.texte {
+    margin: 10px;
+}
+
+.date h1 {
+    margin-bottom: 20px;
+}
+
+.texte h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.texte button {
+    margin-top: 10px;
+    padding: 2px 5px;
+    font-weight: bold;
+}

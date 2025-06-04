@@ -8,8 +8,6 @@ body {
     /* Affiche les sections côte à côte */
     height: 100vh;
     /* Pour que .section1 et .section2 prennent la hauteur entière */
-    overflow: hidden;
-    /* Empêche le scroll global, on scrollera juste dans section2 */
 }
 
 .section1 {
@@ -48,7 +46,7 @@ body {
 .section2 {
     flex: 1;
     /* 50% de l'écran */
-    overflow-y: auto;
+    overflow-y: scroll;
     height: auto;
 }
 
